@@ -16,3 +16,11 @@ export default function BottomBar({ handleLikePress, handlePassPress }) {
     </View>
   )
 }
+const styles = StyleSheet.create({
+ container: {
+   height: 75,
+   flexDirection: 'row',
+   justifyContent: 'space-around',
+   alignItems: 'center',
+ }
+})
