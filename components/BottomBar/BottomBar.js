@@ -32,7 +32,11 @@ const styles = StyleSheet.create({
   alignItems: 'center',
   justifyContent: 'center',
   alignItems: 'center',
-  shadowColor: '#000'
+  shadowColor: '#000',
+  shadowOffset: {
+    width: 0,
+    height: 0,
+  }
  }
 
 })
