@@ -22,5 +22,9 @@ const styles = StyleSheet.create({
    flexDirection: 'row',
    justifyContent: 'space-around',
    alignItems: 'center',
+ }, 
+ button: {
+  width: 50,
+  height: 50,
  }
 })
