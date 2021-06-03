@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/pacifico": "^0.1.0",
     "axios": "^0.21.1",
     "expo": "~41.0.1",
     "expo-constants": "~10.1.3",
