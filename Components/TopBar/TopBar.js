@@ -9,6 +9,7 @@ const TopBar = () => {
 
             <View style={styles.container}>
                 <FontAwesome5 name="fire" size={20} color="#F06795" />
+                <FontAwesome5 name="heart" size={20} color="#5c5c5c" />
                 <FontAwesome name="comments" size={20} color="#5c5c5c" />
                 <FontAwesome name="user" size={20} color="#5c5c5c" />
             </View></>
