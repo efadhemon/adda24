@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, View, Alert } from 'react-native';
 import Constants from 'expo-constants';
 import axios from 'axios';
-import TopBar from './Components/TopBar/TopBar';
-import Swipes from './Components/Swipes/Swipes';
+import Swipes from './components/Swipes/Swipes';
+import TopBar from './components/TopBar/TopBar';
+import BottomBar from './components/BottomBar/BottomBar';
 
 export default function App() {
   const [users, setUsers] = useState([])
@@ -25,12 +26,10 @@ export default function App() {
   }, [])
 
   function handleLike() {
-    console.log('like')
     nextUser()
   }
 
   function handlePass() {
-    console.log('pass')
     nextUser()
   }
 
@@ -65,6 +64,7 @@ export default function App() {
               )
           )}
       </View>
+      <BottomBar handleLikePress={handleLikePress} handlePassPress={handlePassPress} />
     </View>
   )
 }
