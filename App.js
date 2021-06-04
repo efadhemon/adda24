@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, View, Alert } from 'react-native';
 import Constants from 'expo-constants';
 import axios from 'axios';
-import Swipes from './components/Swipes/Swipes';
+import TopBar from './Components/TopBar/TopBar';
+import Swipes from './Components/Swipes/Swipes';
 
 export default function App() {
   const [users, setUsers] = useState([])
@@ -47,7 +48,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-
+      <TopBar />
       <View style={styles.swipes}>
         {users.length > 1 &&
           users.map(
@@ -64,7 +65,6 @@ export default function App() {
               )
           )}
       </View>
-      
     </View>
   )
 }
